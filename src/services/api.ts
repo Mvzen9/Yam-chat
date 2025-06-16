@@ -7,8 +7,8 @@ import axios, {
 
 import { AuthResponse, LoginRequest, Message, User } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://todo-app.polandcentral.cloudapp.azure.com:5005';
-const AUTH_BASE_URL = 'http://todo-app.polandcentral.cloudapp.azure.com:5004/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://todo-app.polandcentral.cloudapp.azure.com:5005';
+const AUTH_BASE_URL = 'https://todo-app.polandcentral.cloudapp.azure.com:5004/api';
 
 // ✅ Axios Instances
 const api = axios.create({ baseURL: API_BASE_URL });
