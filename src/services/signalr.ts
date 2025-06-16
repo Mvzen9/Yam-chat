@@ -14,7 +14,7 @@ class SignalRService {
 
     const signalRUrl =
       import.meta.env.VITE_SIGNALR_URL ||
-      "http://todo-app.polandcentral.cloudapp.azure.com:5005/chatHub";
+      "https://todo-app.polandcentral.cloudapp.azure.com:5005/chatHub";
 
     this.connection = new signalR.HubConnectionBuilder()
       .withUrl(signalRUrl, {
